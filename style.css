@@ -1,0 +1,84 @@
+/* reset  and common code starts here */
+:root {
+    --primary-color: rgba(11, 181, 48, 1); 
+    --secondary-color: rgba(36, 122, 55, 0.9);
+    --padding: 0.5rem;
+    --transition: all 0.3s ease; 
+    --border-radius: 0.6rem;
+    --box-shadow: 0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/* reset  and common code ends here */ 
+
+/* navbar starts here */
+nav {
+    font-family: fantasy;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--primary-color); 
+    box-shadow: var(--box-shadow); 
+}
+.nav-upper {
+    min-height: 10vh;
+    background-color: var(--primary-color); 
+    padding: 1rem 0;
+}
+
+.nav_list {
+    transition: var(--transition);
+}
+.nav_list:hover {
+   text-decoration: overline;
+   color: black
+}
+.nav_link {
+    color: white;
+    transition: var(--transition);
+}
+.nav_link:hover {
+    color: black;
+    transition: var(--transition);
+}
+.profile-icon {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: white 1px solid;
+    filter: saturate(0);
+    transition: var(--transition);
+}
+.profile-icon:hover {
+    filter: saturate(1);
+}
+.nav_lower {
+    min-height: 10vh;
+    background-color: var(--secondary-color);
+}
+.nav_brand {
+    font-size: 2rem;
+}
+/* navbar ends here */
