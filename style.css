@@ -144,10 +144,30 @@ main {
 }
 .sidebar{
     flex: 1;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-self: flex-start;
 }
 .main-content {
     flex: 3;
+    padding: var(--padding);
+} 
+.actions_sort select{
+    padding: var(--padding);
 }
+.actions_search input {
+    padding: var(--padding);
+    width: 15rem;
+}
+.actions_search button {
+    margin-left: -0.3rem;
+    border: 1px solid;
+    padding: 0.55rem;
+}
+
 /* main ends here */
 
 /* footer starts here  */
